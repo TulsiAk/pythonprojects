@@ -1,1 +1,1 @@
-This is a set of all the project going to be done in python
+This is a set of all the project going to be done in python including basic
