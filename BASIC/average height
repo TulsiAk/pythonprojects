@@ -1,0 +1,7 @@
+student_height=[12,23,56,23,78,45,67,89,34,23]
+sum=0
+for h in student_height:
+    sum=sum+h
+average_height=sum/len(student_height)
+print("The average height of the students is:", average_height)
+
