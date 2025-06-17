@@ -1,0 +1,9 @@
+def canNeeded(height,width,can_for_painting_one_wall):
+    area=height*width
+    No_of_cans=area//can_for_painting_one_wall+1
+    return No_of_cans
+h=int(input('enter the height of the wall in meters: '))
+w=int(input("enter the width of the wall in meters: "))
+c=int(input('enter the area that one can of paint can cover in square meters: '))
+can=canNeeded(h,w,c)
+print(f'you will need {can} cans to paint a wall of {h} height and {w} width')
