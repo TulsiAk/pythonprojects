@@ -1,0 +1,29 @@
+
+
+#using list
+def is_leap_year(year):
+    if year%4==0:
+        if year%100==0:
+            if year%400==0:
+                return True
+            else:
+                return False
+            return False
+        else:
+            return True
+        return True
+    else:
+        return False
+def days_in_month(year,month):
+    days=[31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if month>=1 and month<=12:    
+        if is_leap_year(year)==True and month==2:
+            return days[month-1]+1
+        else:
+            return days[month-1]
+    else:
+        print("invalid month")
+year=int(input("enter year="))
+month=int(input("enter month="))
+days=days_in_month(year,month)
+print(days)

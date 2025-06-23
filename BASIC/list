@@ -1,0 +1,53 @@
+list =[12,78,89,45]
+for i in list:
+    print(i)
+print("The maximum number is:", max(list))
+print("The minimum number is:", min(list))  
+print("The sum of the list is:", sum(list))
+print("The average of the list is:", sum(list)/len(list))   
+#find the index of a number in the list
+number = 78
+if number in list:
+    index = list.index(number)
+    print(f"The index of {number} is: {index}") 
+#find the count of a number in the list
+count = list.count(number)
+print(f"The count of {number} is: {count}")
+#sort the list
+list.sort() 
+print("The sorted list is:", list)
+#reverse the list
+list.reverse()              
+print("The reversed list is:", list)
+#append a number to the list
+list.append(100)
+print("The list after appending 100 is:", list)
+#insert a number at a specific index
+list.insert(2, 200)
+print("The list after inserting 200 at index 2 is:", list)
+#remove a number from the list
+list.remove(78)
+print("The list after removing 78 is:", list)
+#pop a number from the list
+popped_number = list.pop()
+print("The list after popping the last element is:", list)
+print("The popped number is:", popped_number)   
+#copy the list
+copied_list = list.copy()
+print("The copied list is:", copied_list)
+#clear the list
+list.clear()    
+print("The list after clearing is:", list)
+#extend the list with another list
+another_list = [1, 2, 3]
+list.extend(another_list)
+print("The list after extending with another list is:", list)
+#count the number of elements in the list
+count_elements = len(list)
+print("The number of elements in the list is:", count_elements) 
+#check if a number is in the list
+if 12 in list:  
+    print("12 is in the list")      
+else:
+    print("12 is not in the list")
+

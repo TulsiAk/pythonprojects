@@ -1,0 +1,41 @@
+dictionary={
+    'tulsi':'i am my fav',
+    1234:'get on coding floor'
+}
+#print first key
+print(dictionary['tulsi'])
+print(dictionary[1234])
+# by for loop
+for i in dictionary:
+    print(i,end=": ")# this will by default print only the key 
+    print(dictionary[i])# to print the value use this
+#add in dictionary
+dictionary['come']="lets code"
+print(dictionary)
+# to delete a key
+del dictionary['come']
+print(dictionary)
+# to check if a key is present
+if 'tulsi' in dictionary:
+    print("yes it is present")
+# to check if a key is not present
+if 'come' not in dictionary:
+    print("no it is not present")
+# to get all keys
+print(dictionary.keys())
+# to get all values
+print(dictionary.values())
+# to get all items
+print(dictionary.items())
+# to copy the dictionary
+dictionary2=dictionary.copy()
+print(dictionary2)
+# to clear the dictionary
+dictionary.clear()
+print(dictionary)
+# to get the length of the dictionary
+print(len(dictionary2))
+# to get the value of a key if it is present else return a default value
+print(dictionary2.get('tulsi', 'not found'))  # returns 'i am my fav'
+print(dictionary2.get('ami', 'not found'))
+# returns 'not found' since 'ami' is not a key in the dictionary

@@ -1,0 +1,24 @@
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def div(a, b):
+    return a / b
+
+def mul(a, b):
+    return a * b
+
+dic = {'+': add, '-': sub, '/': div, '*': mul}
+def calculate(a, operator,b):
+    if operator in dic:
+        return dic[operator](a, b)
+    else:
+        return "Invalid operator"   
+print("Welcome to the calculator")
+first_number = float(input("Enter the first number: "))
+operator = input("Enter the operator (+, -, /, *): ")
+second_number = float(input("Enter the second number: "))
+result = calculate(first_number,operator, second_number)
+print("The result is:", result)
